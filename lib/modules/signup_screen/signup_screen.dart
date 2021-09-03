@@ -66,14 +66,14 @@ class SignUpScreen extends StatelessWidget {
                 keyboardType: TextInputType.text,
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.03,
+                height: MediaQuery.of(context).size.height * 0.02,
               ),
               CustomElevatedButton(
                   buttonText: 'Sign Up',
                   onPressed: () {},
                   buttonColor: Colors.deepOrange),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.03,
+                height: MediaQuery.of(context).size.height * 0.01,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
