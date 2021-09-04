@@ -61,14 +61,25 @@ Widget CustomTextField (
 
     )=>TextField(
 
+cursorColor: Colors.deepOrange,
+
   obscureText: isSecure,
 keyboardType: keyboardType,
   decoration: InputDecoration(
+
+//focusColor: Colors.deepOrange,
+//focusedBorder:InputBorder.none,
+//focusColor: Colors.deepOrange,
+//focusedErrorBorder: InputBorder.none,
+//focusColor: Colors.deepOrange,
+   // disabledBorder: InputBorder.none,
+ //focusColor: Colors.deepOrange,
    // focusedBorder: OutlineInputBorder(borderSide: ),
 contentPadding: EdgeInsets.symmetric(horizontal: 25,vertical: 20),
-border: OutlineInputBorder(borderRadius: BorderRadius.circular(30),borderSide: BorderSide(
-
-)),
+border: OutlineInputBorder(
+  borderRadius: BorderRadius.circular(30)
+  
+),
  filled: true,
    // fillColor: Colors.grey,
     hintText: hintText
