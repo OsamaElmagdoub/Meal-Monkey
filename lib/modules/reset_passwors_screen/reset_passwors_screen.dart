@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:meal/modules/otp_screen/otp_screen.dart';
 import 'package:meal/shared/components/components.dart';
 class ResetPassword extends StatelessWidget {
   const ResetPassword({Key? key}) : super(key: key);
@@ -33,7 +34,11 @@ class ResetPassword extends StatelessWidget {
             SizedBox(
             height: MediaQuery.of(context).size.height * 0.04,
   ),
-              CustomElevatedButton(onPressed: (){},buttonText: 'Send',buttonColor: Colors.deepOrange,)
+              CustomElevatedButton(onPressed: (){
+
+                Navigator.pushNamed(context, OtpScreen.id);
+
+              },buttonText: 'Send',buttonColor: Colors.deepOrange,)
 
             ],
 

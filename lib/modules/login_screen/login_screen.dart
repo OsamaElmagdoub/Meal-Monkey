@@ -1,5 +1,8 @@
 
+
 import 'package:flutter/material.dart';
+import 'package:meal/modules/findfood_screen/findfood_screen.dart';
+import 'package:meal/modules/reset_passwors_screen/reset_passwors_screen.dart';
 import 'package:meal/modules/signup_screen/signup_screen.dart';
 import 'package:meal/modules/first_screen/first_screen.dart';
 import 'package:meal/shared/components/components.dart';
@@ -35,7 +38,11 @@ class LoginScreen extends StatelessWidget {
              ),
               SizedBox(height: MediaQuery.of(context).size.height*0.03,)
               ,
-              CustomElevatedButton(buttonText: 'Login', onPressed: (){},buttonColor: Colors.deepOrange)
+              CustomElevatedButton(buttonText: 'Login', onPressed: (){
+
+                Navigator.pushNamed(context, FindFoodScreen.id);
+
+              },buttonColor: Colors.deepOrange)
               ,
               // CustomMaterialButton(
               //     onPressed: (){
@@ -50,7 +57,7 @@ class LoginScreen extends StatelessWidget {
               GestureDetector(
 
                   onTap: (){
-                    Navigator.of(context).pushNamed(SignUpScreen.id);
+                    Navigator.of(context).pushNamed(ResetPassword.id);
 
 
                   },

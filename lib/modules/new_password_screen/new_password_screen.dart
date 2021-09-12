@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:meal/modules/findfood_screen/findfood_screen.dart';
 import 'package:meal/shared/components/components.dart';
 class NewPasswordScreen extends StatelessWidget {
   const NewPasswordScreen({Key? key}) : super(key: key);
@@ -38,7 +39,11 @@ class NewPasswordScreen extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.04,
                 ),
-                CustomElevatedButton(onPressed: (){},buttonText: 'Next',buttonColor: Colors.deepOrange,)
+                CustomElevatedButton(onPressed: (){
+                  Navigator.pushNamed(context, FindFoodScreen.id);
+
+
+                },buttonText: 'Next',buttonColor: Colors.deepOrange,)
 
               ],
 

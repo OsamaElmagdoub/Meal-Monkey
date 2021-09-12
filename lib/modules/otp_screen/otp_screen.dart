@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:meal/modules/new_password_screen/new_password_screen.dart';
 import 'package:meal/shared/components/components.dart';
 class OtpScreen extends StatelessWidget {
   const OtpScreen({Key? key}) : super(key: key);
@@ -33,7 +34,11 @@ class OtpScreen extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.04,
                 ),
-                CustomElevatedButton(onPressed: (){},buttonText: 'Send',buttonColor: Colors.deepOrange,)
+                CustomElevatedButton(onPressed: (){
+
+                  Navigator.pushNamed(context, NewPasswordScreen.id);
+
+                },buttonText: 'Next',buttonColor: Colors.deepOrange,)
 ,
 
                 SizedBox(
